@@ -1,7 +1,7 @@
-#This app is created by KALI : TEH HACKER aka Lucky verma
+#This app is created by KALI : THE HACKER aka Lucky verma
 #This tool is a Login page GUI with saved usernames and passowrds
 
-# (username - password)
+#(username - password)
 #kali - toor
 #ilak - toor
 #admin - password
