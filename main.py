@@ -28,6 +28,7 @@ except Exception as e:
 	# If there are any errors encountered during the importing of the modules, then we display the error on the console screen
 
 	input(f'\n[ Error : {e} ]\nPress enter key to continue...')
+	exit()
 
 def createUser(username, password):
 	""" This function creates a new user item using the user provided credentials and then saves the updated data in the data.json file. The function takes in two arguments : username, password. The username and password are the inputs that the user enters on the signup screen input boxes. """
