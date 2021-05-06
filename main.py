@@ -6,13 +6,13 @@ This script is a simple implementation of login system type thing using python w
 Author : Lucky Verma (https://github.com/luckyverma-sudo)
 Created on : May 4, 2021
 
-Last modified by : Rishav Das (https://github.com/luckyverma-sudo)
-Last modified on : May 5, 2021
+Last modified by : Rishav Das (https://github.com/rdofficial)
+Last modified on : May 6, 2021
 
 Changes made in last modification :
-1. Added the sign up option on the login screen as well as added the signup functionality on this script.
-2. Added the feature of detecting the blank usernames or password entries by the user in case of both login or signup.
-3. Updated some parts of the code + changed the comment texts in order to make the comments to describe more of the code.
+1. Remove the dependency of the data.json to be present in the folder of this tool. Means, if the file does not exists, then we create a new file with 0 user data. Required to add no more module dependencies, just added some try..except blocks and did the entire work for ease.
+2. Removed the data.json from being pushed as a part of repository as well as updated the .gitignore file in order to properly ignore the data.json files and all the json data files that are required by this tool to work properly.
+3. Updated some errors and mistakes in the commented docs.
 
 Authors contributed to this script (Add your name below if you have contributed) :
 1. Lucky Verma (github:https://github.com/luckyverma-sudo/, email:@gmail.com)
@@ -36,7 +36,12 @@ def createUser(username, password):
 		# If the user entered username and password inputs are valid and then we continue
 
 		# Loading the user credentials from data.json file
-		data = loads(open('data.json', 'r').read())
+		try:
+			data = loads(open('data.json', 'r').read())
+		except Exception as e:
+			# If there are any errors encountered during the process, then we create a blank array representing the array with 0 user credentials data
+
+			data = []
 
 		# Checking the username and password pre-existence in the data
 		for item in data:
@@ -109,7 +114,12 @@ def authenticate(username, password):
 	""" This function authenticates the user on the basis of the credentials provided using the arguments. This function takes two arguments (parameters) : username, password. When the user enters the username and passwords, this function should be called as well as the user entered data should be passed to it. The function can also be added to the onclick event listener of the login button. """
 
 	# Reading the data of the data.json file
-	data = loads(open('data.json', 'r').read())
+	try:
+		data = loads(open('data.json', 'r').read())
+	except Exception as e:
+		# If there are any errors encountered during the process, then we create a blank array representing the array with 0 user credentials data
+
+		data = []
 
 	# Checking wheter the user entered username does exist or not
 	authentication = 0  # Setting the authentication to false in first

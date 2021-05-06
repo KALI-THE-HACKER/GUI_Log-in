@@ -1,0 +1,10 @@
+# The ignore file list for GUI Login System
+#
+# 1. Ignore the database files and JSON files.
+# 2. Ignore the test scripts.
+#
+
+tests/
+*.json
+*.sqlite3
+*.db
