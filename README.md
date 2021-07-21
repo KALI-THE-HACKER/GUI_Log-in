@@ -2,7 +2,7 @@
 
 This is a simple script written in python3 with the use of the tkinter framework to create the GUI. The script is learning project for beginners in tkinter programming, where in this project, we create a simple login screen using the objects defined in the tkinter module. We also take the aid of json module to read and write the data.json file, the data.json file contains the account credentials of all the users who want to login on this script.
 
-##Dependencies
+## Dependencies
 The script requires the following python3 modules to be installed :
 * tkinter
 
