@@ -16,6 +16,6 @@ python3 main.py
 
 The project is created by _Lucky Verma_ on May 5, 2021. The project was started as a learning project for myself, and also my friends collaborated on this and helped me out with the coding. If you want to contribute to this project, and make it even better then there you go, you are allowed to do it. The list of the contributors on this project till date is written below.
 
-__Contributors :__
+### __Contributors :__
 * Lucky Verma (github:https://github.com/luckyverma-sudo/, email:luckyv0545746@gmail.com)
 * Rishav Das (github:https://github.com/rdofficial/, email:rdofficial192@gmail.com)
