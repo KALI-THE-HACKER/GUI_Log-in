@@ -6,7 +6,7 @@ This is a simple script written in python3 with the use of the tkinter framework
 The script requires the following python3 modules to be installed :
 * tkinter
 
-## Usage : 
+## Usage 
 Use the below commands in the terminal to use this python script.
 ```
 python3 main.py
